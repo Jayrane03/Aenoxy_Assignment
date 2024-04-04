@@ -1,0 +1,78 @@
+/* form.css */
+
+/* Custom styling for form container */
+.form-container {
+    max-width: 550px;
+ 
+    position: absolute;
+    top: 45%;
+    right: 10%;
+   
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Custom styling for form inputs */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Custom styling for form select */
+  .form-select {
+    position: relative;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    appearance: none;
+  }
+
+  /* Custom styling for form checkbox */
+  .form-checkbox {
+    margin-right: 5px;
+ 
+  }
+ 
+  
+  /* Custom styling for form submit button */
+  .form-submit {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    margin: 20px auto ;
+    padding: 10px;
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.form-submit:hover{
+    background-color: #0163a4;
+}
+  span {
+    font-weight: bold;
+    color: #0070ba;
+  }
+  
+  .form-container h2 {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  

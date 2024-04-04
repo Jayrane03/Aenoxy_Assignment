@@ -1,0 +1,261 @@
+/* components.css */
+
+/* Resetting styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  display: none; /* Initially hidden for larger screens */
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.3s ease;
+}
+
+.line.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.hamburger{
+  display: none;
+}
+/* Sidebar styles */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -270px; /* Initially off-screen */
+  width: 270px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding-top: 80px; /* Offset for the fixed navbar */
+  /* border-top: 1px solid #022069; Added border */
+  transition: right 0.3s ease; /* Transition right property */
+  overflow-y: auto; /* Allow sidebar to scroll */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 20px;
+}
+
+/* Hamburger icon styles for smaller screens */
+@media (max-width: 786px) {
+  .logo{
+    position: absolute;
+    
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-40%);
+    z-index: 999;
+  }
+
+  /* Sidebar styles for smaller screens */
+  .sidebar {
+    display: block; /* Initially hidden for smaller screens */
+    position: fixed;
+   
+    top: 12%;
+    right: -280px;
+    transition: right 0.3s ease;
+  }
+
+  .sidebar.open {
+    right: 0px; /* Bring sidebar into view */
+  }
+
+  .sidebar ul li {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .login_btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 10px;
+    width: 250px;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .login_btns button {
+    width: 100px;
+  }
+
+  .login_btn {
+    opacity: 0;
+    /* display: none; */
+  }
+  .flex a{
+    display: none;
+  }
+
+
+  /* Banner */
+  .banner{
+    width: 100vw;
+    padding: 20px 0;
+    margin: 0 auto;
+    height: 50vh;
+  }
+  .text_box{
+    /* font-size: 20px; */
+    width: 95vw;
+    margin: 70px auto;
+    text-align: center;
+  }
+  .text_box h1 {
+    font-size: 24px;
+  }
+  .text_box p{
+    font-size: 14px;
+  }
+  /* Form */
+  .form-container {
+    /* position: absolute; */
+    top: 62% !important;
+    width: 100vw;
+     right: 0 !important;
+}
+.form_head{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Connnect */
+.connect_box {
+  margin: 0;
+  width: absolute;
+  top: 230%;
+  width: 100vw;
+  position: absolute;
+  height: 50vh;}
+
+  .text {
+    display: flex;
+    /* flex: 1; */
+    width: 105%;
+    margin-left: 15px;
+    flex-direction: column;
+  }
+  .connect_row h1{
+    margin: 40px 0;
+  }
+ 
+
+
+}
+/* footer.css */
+
+@media (max-width: 786px) {
+  .footer-container {
+    top: 320% !important;
+    position: absolute;
+    width: 100vw;
+  }
+
+  .foot_col {
+    height: auto;
+    width: 100%;
+    flex: 1;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .foot_row {
+    display: flex;
+    margin-top: 20px;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .pay_pal {
+    position: absolute;
+    top: -15%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .link1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+  }
+
+  .usa {
+    right: 4.3rem;
+  }
+
+  .right_link {
+    position: absolute;
+    bottom: -53%;
+    right: 6%;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .foot_link {
+    margin-bottom: 50px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hori_line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin-top: 20px;
+  }
+}

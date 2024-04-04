@@ -1,0 +1,109 @@
+.footer-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 80vh;
+    /* color: rgb(141, 142, 143); */
+    top: 200%;
+    /* background-color: #f7f7f7; */
+  
+  }
+  
+ 
+  .foot_row {
+    display: flex;
+    padding: 80px;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .foot_col {
+    height: 40vh;
+    flex: 1;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  .more{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .foot_col h1 {
+    font-weight: bold;
+    color: #022069;
+    position: relative;
+    padding-bottom: 10px; /* Add padding bottom */
+  }
+  
+  .foot_col h1::before {
+    content: "";
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+ 
+  .row {
+    /* width: 20%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px; /* Adjust gap as needed */
+  }
+  .row a{
+    font-size: 13px;
+  }
+  
+  .column {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    flex-direction: column;
+    
+  }
+  
+  .more {
+    gap: 20px;
+    margin-top: 20px; /* Add margin top */
+  }
+  
+
+  .foot_link{
+    margin-bottom: 50px;
+    height: 27vh;
+  }
+  .pay_pal{
+    margin: -34px 34px;
+  }
+  .link1{
+    display: flex;
+    width: 50vw;
+    margin-left: 20px;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+  }
+  .link1 a{
+   color: #022069;
+   font-weight: bolder;
+   font-size: 13px;
+  }
+  .hori_line{
+    margin: auto;
+    width: 94vw;
+    border:1px solid grey;
+  }
+.right_link{
+    display: flex;
+    width: 35vw;
+    height: 4vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0.1%;
+}
