@@ -11,5 +11,8 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
-  ]
+  ],
+  content: [
+    './src/**/*.html', // Specify the path(s) to your HTML files
+  ],
 };
