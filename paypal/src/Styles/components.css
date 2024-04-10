@@ -78,19 +78,13 @@ align-items: center;
 
 
 /* Connect  */
-#conn_row{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
+
 .text{
     display: flex;
     /* flex: 1; */
     width: 100%;
-    margin-left: 180px;
+   
+    margin-left: 66%;
     flex-direction: column;
 }
 .text p:nth-child(2){
@@ -118,15 +112,7 @@ align-items: center;
   
 
   @media (max-width: 786px) {
-    #conn_row {
-        display: flex;
-        position: absolute;
-        width: 100%;
-        align-items: center;
-        flex-direction: column;
-        top: -23px;
-        margin: 12px;
-    }
+ 
     .footer-container{
     
         display: none;
