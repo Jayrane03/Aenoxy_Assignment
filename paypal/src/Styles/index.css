@@ -2,11 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Your custom styles here */
-
-/* components.css */
-
-/* Resetting styles */
 * {
   margin: 0;
   padding: 0;

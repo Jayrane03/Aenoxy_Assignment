@@ -5,8 +5,8 @@ const Connect = () => {
    <>
     <div className="connect_box flex flex-col w-100">
 
-<div className="connect_row flex flex-col justify-start text-left align-middle">
-<h1 className='text-3xl' >Some other ways to <br />connect with us</h1>
+<div className="connect_row ">
+<h1 className='text-4xl ' >Some other ways to <br />connect with us</h1>
   <div className="text">
     <p>Want to speak with Sales right away?</p>
     <p>Cal 877-7947639</p>

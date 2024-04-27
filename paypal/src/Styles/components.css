@@ -16,6 +16,7 @@ body{
 .flex{
     display: flex;
     gap: 40px;
+   
     height: 8vh;
 align-items: center;
     width: 90vw;
@@ -84,7 +85,7 @@ align-items: center;
     /* flex: 1; */
     width: 100%;
    
-    margin-left: 66%;
+    margin-left: 6%;
     flex-direction: column;
 }
 .text p:nth-child(2){
@@ -93,11 +94,19 @@ align-items: center;
     margin-top: 10px;
 }
 .connect_box{
-    margin: 100px;
- 
-    width: 35vw;
+    margin: 50px;
+  display: flex !important;
+  flex-direction: column !important;
+    width: 55vw;
+    align-items: center;
+    justify-content: center;
     height: 70vh;
     
+}
+.connect_row{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
 }
 .connect_row h1{
     margin-top: 50px;
